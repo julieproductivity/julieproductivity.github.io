@@ -78,7 +78,7 @@ font-size: 20px;
 color: #ffffff;
 }
 
-@media (max-width:700px) {
+@media (max-width:425px) {
     
     header h1{
         font-size: 18px;
@@ -90,10 +90,13 @@ color: #ffffff;
     } 
 
 .columns img{
-    width: 500px;
-    margin: 3rem 0 0 0;
+    width: 60%;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     align-items: center;
+    justify-items: center;
 }
 
 .columns .bad{
@@ -116,7 +119,7 @@ color: #ffffff;
 }
 
 footer{
-    font-size: 10px;
+    font-size: 15px;
     margin-top: 1rem;
     text-align:center;
     max-width: 300px;
