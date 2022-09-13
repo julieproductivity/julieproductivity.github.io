@@ -1,3 +1,4 @@
+
 * {
     
     margin: 0;
@@ -5,6 +6,7 @@
     background-color: #515271;
     box-sizing: border-box;
 }
+
 body{
     display: block;
 }
@@ -78,7 +80,7 @@ font-size: 20px;
 color: #ffffff;
 }
 
-@media (max-width:425px) {
+@media (max-width:700px) {
     
     header h1{
         font-size: 18px;
@@ -126,4 +128,5 @@ footer{
     margin-top: 1rem;
     text-align:center;
     
+}
 }
