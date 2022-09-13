@@ -90,7 +90,7 @@ color: #ffffff;
     } 
 
 .columns img{
-    max-width: 250px;
+    width: 500px;
     margin: 3rem 0 0 0;
     display: block;
     align-items: center;
