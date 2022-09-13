@@ -87,10 +87,13 @@ color: #ffffff;
         display: block;
         grid-template-columns: 1fr;
         padding: 0;
+        
     } 
-
+.columnleft{
+    margin-left: 2rem;
+}
 .columns img{
-    width: 60%;
+    width: 70%;
     margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
@@ -103,7 +106,7 @@ color: #ffffff;
     
     max-width: 250px;
     font-size: 20px;
-    margin: 0 0 0 1rem;
+    margin: 2rem 0 0 1rem;
 
 }
 
@@ -122,5 +125,5 @@ footer{
     font-size: 15px;
     margin-top: 1rem;
     text-align:center;
-    max-width: 300px;
+    
 }
