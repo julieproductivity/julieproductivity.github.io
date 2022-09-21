@@ -77,30 +77,33 @@ footer{
 }
 
 
-@media (max-width: 1048px){
+@media (max-width: 1050px){
 
     body{
         margin: 1rem;
         
     }
 
-}
-header{
-    grid-template-columns: repeat(1,1fr);
-}
-.content{
-    grid-template-columns: repeat(2,1fr);
+
+    header{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .content{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    
+    .artd, .uxd, .dev2 {
+        margin-top: 3rem;
+    }
+    
+    .dev1{
+        margin: 0;
+    }
+    
+    h4, h3{
+        font-size: 14px;
+    }
     
 }
 
-.artd, .uxd, .dev2 {
-    margin-top: 3rem;
-}
-
-.dev1{
-    margin: 0;
-}
-
-h4, h3{
-    font-size: 14px;
-}
