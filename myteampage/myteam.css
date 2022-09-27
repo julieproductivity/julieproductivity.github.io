@@ -14,14 +14,18 @@ header {
     grid-template-columns: repeat(2,1fr);
 }
 
+h1 {
+    font-family: 'PT-Serif', serif;
+}
+
 h2{
     margin-bottom: 1rem;
-    font-family: "Poppins",sans-serif;
+    font-family: 'Poppins',sans-serif;
     font-size: 18px;
 }
 p{
     font-size: 18px;
-    font-family: "Poppins",sans-serif;
+    font-family: 'Poppins',sans-serif;
     line-height: 24px;
     max-width: 350px;
 }
@@ -48,7 +52,7 @@ img{
 }
 
 h3{
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     padding-top: 1rem;
 
