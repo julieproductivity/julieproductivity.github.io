@@ -37,7 +37,7 @@ margin-left: 6rem;
 .columnleft .bad{
     
     width: 500px;
-    font-family:'Henny Penny', 'sans-serif' ;
+    font-family:'Henny Penny', cursive ;
     font-size: 40px;
     color: #ffffff;
     margin: 0rem 1rem 2rem;
@@ -47,7 +47,7 @@ margin-left: 6rem;
 .columnleft .text {
 
     width: 350px;
-    font-family: 'DotGothic16', 'Arial', 'sans-serif';
+    font-family: 'DotGothic16', sans-serif;
     font-size: 25px;
     color: #ffffff;
     margin: 0rem 1rem 2rem;
@@ -58,7 +58,7 @@ margin-left: 6rem;
 font-size: 25px;
 padding: 1rem;
 border-radius: 2rem;
-font-family:'Henny Penny', 'sans-serif' ;
+font-family:'Henny Penny', cursive ;
 background-color:#efd427 ;
 color: #FF6D5B;
 border: none;
