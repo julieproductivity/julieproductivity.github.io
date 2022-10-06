@@ -1,0 +1,139 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #faebc5;
+}
+
+body {
+    margin: 2rem 5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+/* HEADER and NAV */
+
+h3{
+float: inline-start;
+width: 300px;
+font-size: 40px;
+text-transform: uppercase;
+}
+
+header {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.nav-list {
+    display: flex;
+    gap:1.5rem;
+    list-style: none;
+    justify-content: flex-end;
+    
+}
+
+.nav-list > li > a {
+
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+
+/* MAIN CONTENT */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+
+h1 {
+color:#f0b514;
+font-family: 'Josefin Sans', sans-serif;
+font-size: 50px;
+margin-top: 3rem;
+}
+.maincontent{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+}
+
+.maincontent > h4 > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.maincontent > h4 > ul > li {
+    list-style: none;
+}
+h4 {
+    line-height: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+
+}
+.mainimage > img {
+    width:100%;
+    max-width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.buttons {
+    gap: 1rem;
+    display: flex;
+    margin-top: 1rem;
+}
+button{
+    flex: 1 1 30px;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+/* Project section */
+
+.currentproject, .youtube {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.currentproject > .project {
+    display: flex;
+
+}
+
+.devc,.top {
+    text-align: center;
+}
+
+.currentproject > h2, .youtube > h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 3rem;
+    color:#f0b514;
+}
+
+
+/* YOUTUBE section*/
+
+
+
+
+footer {
+    padding-top: 5rem;
+    text-align: center;
+}
