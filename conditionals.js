@@ -163,3 +163,18 @@ function numberChecker() {
 		return false;
 	}
 }
+
+
+//-- direction math
+
+const birthYear = 1948;
+const currentYear = 1965;
+const firstName = "Carlos";
+const lastName = "Stevenson";
+
+const fullName=firstName+lastName;
+const age=currentYear-birthYear;
+
+const greeting='Hello! My name is ' + fullName + 'and I am ' + age + 'years old.';
+
+console.log(greeting);
