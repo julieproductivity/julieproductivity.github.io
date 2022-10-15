@@ -1,6 +1,6 @@
 //conditional 1
 
-let season = 'winter';
+let season = 'winter'; //change bet. 'winter' and 'summer'
 let response;
 
 if (season == 'summer') {
@@ -11,7 +11,7 @@ response="It's winter!"
 
 // Don't edit the code below here!
 
-section.innerHTML = ' ';
+section.innerHTML = ' ';œ
 let para1 = document.createElement('p');
 para1.textContent = response;
 section.appendChild(para1);
@@ -30,23 +30,23 @@ if (machineActive==true) {
 response="This is not possible, an error has occurred."
 }
 
-else if (score=>0 &&score<=19) {
+    else if (score>=0 &&score<=19) {
 response="That was a terrible score - total fail!"
 } 
-    else if (score=>20 &&score<=39){
+    else if (score>=20 &&score<=39){
 response="You know some things, but it\'s a pretty bad score. Needs improvement."
 }
-    else if (score=>40&&score<=69) {
+    else if (score>=40&&score<=69) {
 response="You did a passable job, not bad!"
 }
-    else if (score=>70&&score<=89) {
+    else if (score>=70&&score<=89) {
 response="That\'s a great score, you really know your stuff."
 }
-else if (score=>90&&score<=100) {
+else if (score>=90&&score<=100) {
 response="What an amazing score! Did you cheat? Are you for real?"
 }
-
 };
+
 // Don't edit the code below here!
 
 section.innerHTML = ' ';
@@ -68,35 +68,40 @@ let machineActive = true;
 
 if(machineActive) {
 	switch (true) {
-case (score<0||score>100):
+    
+        case (score<0||score>100):
 response="This is not possible, an error has occurred."
 break;
 
-case (score>=0 &&score<=19):
+        case (score>=0 &&score<=19):
 response="That was a terrible score - total fail!"
 break;
-   case (score>=20 &&score<=39):
+   
+        case (score>=20 &&score<=39):
 response="You know some things, but it\'s a pretty bad score. Needs improvement."
 break;
-    case (score>=40&&score<=69):
+    
+        case (score>=40&&score<=69):
 response="You did a passable job, not bad!"
 break;
-   case (score>=70&&score<=89):
+   
+        case (score>=70&&score<=89):
 response="That\'s a great score, you really know your stuff."
 break;
-case (score>=90&&score<=100):
+
+        case (score>=90&&score<=100):
 response="What an amazing score! Did you cheat? Are you for real?"
 break;
 
-default:
+        default:
 response="This is not possible, an error occurred.";
-
 } 
+
 }
 
 else {
   response = 'The machine is turned off. Turn it on to process your score.';
-}
+};
 
 // Don't edit the code below here!
 
@@ -115,26 +120,24 @@ section.appendChild(para2);
 // conditionals 4
 
 let machineActive = true;
-let pwd = 'cheee';
-
+let pwd = 'cheese';
 let machineResult;
 let pwdResult;
 
 if (machineActive) {
 
-switch (true) {
+    switch (true) {
 
     case (pwd==='cheese'):
-    pwdResult='Successfully logged in'
+pwdResult='Successfully logged in'
 break;
 
-default:
+    default:
 pwdResult='login attempt not successful';
 }
 }
 else {
 machineResult='Machine turned off.' };
-
 
 // Don't edit the code below here!
 
