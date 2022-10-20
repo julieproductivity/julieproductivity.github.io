@@ -1,0 +1,128 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  </html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+      <h1 id="title"> freeCodeCamp Survey Form </h1>
+<p id="description"> Thank you for taking the time to help us improve the platform </p>
+
+<form id="survey-form">
+
+<fieldset>
+  <label for="name" id="name-label"> Name <input id="name" type="text" placeholder="Enter your name" value="name" required > </label>
+  <label for="email" id="email-label"> Email <input id="email" type="email" placeholder="Enter your Email" value="email" required> </label>
+  <label for="number" id="number-label"> Age (optional) <input id="number" type="number" min=13 max=80 placeholder="Age" value="age"> </label>
+  
+  <label for="current-role"> Which option best describes your current role? 
+    <select id="dropdown"> 
+      <option> Select current role </option>
+      <option> Student </option>
+      <option>Full Time Job </option>
+      <option>Full Time Learner </option>
+      <option>Prefer not to say </option>
+      <option>Other </option>
+  </label>
+  </select>
+  </fieldset>
+  
+  <fieldset >
+Would you recommend freeCodeCamp to a friend ? 
+  <label> <input type="radio" name="account-type" class="radio" value="definitely"> Definitely </label>
+  <label> <input type="radio" name="account-type" class="radio" value="maybe"> Maybe </label>
+  <label> <input type="radio" name="account-type" class="radio" value="notsure"> Not sure </label>
+
+  </fieldset>
+  
+  <fieldset>
+    What is your favorite feature of freeCodeCamp ?
+    <select>
+      <option> Select an option </option>
+      <option>Challenges </option>
+      <option>Project </option>
+      <option>Community</option>
+      <option>Open Source </option>
+      </select>
+  </fieldset>
+  
+  <fieldset> What would you like to see improved ? (Check all that apply)
+    <label> <input type="checkbox" class="radio" value="frontend"> Front-end Projects</label>
+    <label> <input type="checkbox" class="radio" value="backend"> Back-end Projects</label>
+    <label> <input type="checkbox" class="radio" value="data"> Data Visualization</label >
+    <label> <input type="checkbox" class="radio" value="challenges"> Challenges</label>
+    <label> <input type="checkbox" class="radio" value="opensource"> Open Source Community</label>
+    <label> <input type="checkbox" class="radio" value="gitterhelp"> Gitter help rooms</label>
+    <label> <input type="checkbox" class="radio" value="video"> Videos</label>
+    <label> <input type="checkbox" class="radio" value="meetups"> City Meetups</label>
+    <label> <input type="checkbox" class="radio" value="wiki"> Wiki</label>
+    <label> <input type="checkbox" class="radio" value="forum"> Forum</label>
+    <label> <input type="checkbox" class="radio" value="additionalcourses"> Additional Courses </label>
+    
+  </fieldset>
+  
+  <fieldset>
+    Any comments or suggestions?
+    <textarea id="comments" name="comment" rows="6" cols="30" placeholder="Enter your comment here...">
+
+      </textarea>
+
+  </fieldset>
+
+
+<input type="submit" value="Submit" id="submit"> 
+  </form>
+
+      </body>
+
+
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  color:white;
+  background-color:rgba(27, 27, 50, 0.8);
+}
+
+h1, p{
+  text-align:center;
+}
+
+form{
+  max-width:600px;
+  margin:auto;
+  background-color:rgba(27, 27, 50, 0.8);
+}
+
+fieldset{
+  /*border:none;*/
+  padding:2rem;
+}
+
+label{
+  display:block;
+}
+
+input, select, textarea{
+  width:100%;
+}
+
+.radio{
+  width:unset;
+}
+
+input[type="submit"]{
+  margin: 2rem auto;
+  max-width:200px;
+  
+}
+
+** end of undefined **
+

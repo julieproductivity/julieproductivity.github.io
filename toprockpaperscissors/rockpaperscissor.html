@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <script>
+// input from player : rock, paper, scissors 
+// computer randowly choose between rock, paper, scissors:
+    // const computerChoices = ['rock','paper','scissors']       
+    // function getComputerChoices {
+        // const getComputerChoices=computerChoices[Math.floor(math.random()*computerChoices.length)];
+ 
+// if player === computer choice: return "It's a tie!"
+
+//else if (player === rock):
+    // if (computer === paper)return "You lose! Paper beats Rock!"
+    // else return "You win! Rock beats Scissors"
+
+// else if (player === paper)
+    // if (computer === rock) return "You win! Paper beats Rock!"
+    // else return "You lose! Scissors beats Paper"
+
+// else if (player === scissors) 
+    // if (computer === paper) return "You win! Scissors beat Paper!"
+    // else return "You Lose! Rock beats Scissors!"
+
+    let playerChoices = prompt("Choose between Rock, paper, scissors : ", "");
+    
+    const computerChoices  = ['rock','paper','scissors'];
+       
+function getComputerChoice(){
+    const getComputerChoice=computerChoices[Math.floor(math.random()*computerChoices.length)];
+    //computer needs to ramdomly choose between rock,paper,scissors
+    return getComputerChoice;
+}
+if (playerChoices === getComputerChoice){
+    prompt ("It's a tie!");
+}
+
+//else if (player === rock):
+    // if (computer === paper)return "You lose! Paper beats Rock!"
+    // else return "You win! Rock beats Scissors"
+
+// else if (player === paper)
+    // if (computer === rock) return "You win! Paper beats Rock!"
+    // else return "You lose! Scissors beats Paper"
+
+// else if (player === scissors) 
+    // if (computer === paper) return "You win! Scissors beat Paper!"
+    // else return "You Lose! Rock beats Scissors!"
+    </script>
+
+</body>
+</html>
