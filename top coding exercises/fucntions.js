@@ -72,3 +72,9 @@ function lastLetter ("") {
 
 
 
+// Build your own functions
+
+displayMessage()
+
+
+
