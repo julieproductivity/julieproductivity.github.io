@@ -14,44 +14,80 @@
     // function getComputerChoices {
         // const getComputerChoices=computerChoices[Math.floor(math.random()*computerChoices.length)];
  
-// if player === computer choice: return "It's a tie!"
+// if player === computer choice: "It's a tie!"
 
 //else if (player === rock):
-    // if (computer === paper)return "You lose! Paper beats Rock!"
-    // else return "You win! Rock beats Scissors"
+    // if (computer === paper)"You lose! Paper beats Rock!"
+    // else "You win! Rock beats Scissors"
 
 // else if (player === paper)
-    // if (computer === rock) return "You win! Paper beats Rock!"
-    // else return "You lose! Scissors beats Paper"
+    // if (computer === rock) "You win! Paper beats Rock!"
+    // else "You lose! Scissors beats Paper"
 
 // else if (player === scissors) 
-    // if (computer === paper) return "You win! Scissors beat Paper!"
-    // else return "You Lose! Rock beats Scissors!"
+    // if (computer === paper) "You win! Scissors beat Paper!"
+    // else "You Lose! Rock beats Scissors!"
 
-    let playerChoices = prompt("Choose between Rock, paper, scissors : ", "");
+                // --- user choice
+
+    let playerChoices = prompt("Choose between Rock, paper, scissors : ", "").toLowerCase();
+    //add a function : if playerChoice != rock, paper or scissors; "you should choose between
+    // rock, paper, scissor!"
     
-    const computerChoices  = ['rock','paper','scissors'];
+   if (playerChoices=="rock" || playerChoices=="paper"||playerChoices=="scissors") {
+      console.log("You chose " + playerChoices);
+    }
+  else {
+    console.log("Error! Enter either: rock, paper or scissors!");
+}
+    //const computerChoices  = ['rock','paper','scissors'];
        
-function getComputerChoice(){
-    const getComputerChoice=computerChoices[Math.floor(math.random()*computerChoices.length)];
+                //---computer choice 
+
+
+    const computerChoices=["rock","paper","scissors"];
+
+    function getComputerChoice(){
+    const getComputerChoice=computerChoices[Math.floor(Math.random()*computerChoices.length)];
     //computer needs to ramdomly choose between rock,paper,scissors
-    return getComputerChoice;
+    return (getComputerChoice);  
+    
 }
-if (playerChoices === getComputerChoice){
-    prompt ("It's a tie!");
+        console.log(getComputerChoice);
+
+    //---- GAME LOGIC
+
+    if (playerChoices === getComputerChoice()){
+        console.log("It's a tie!");
+    }
+
+    else if (playerChoices === "rock"){ 
+        if (getComputerChoice() === "paper") {
+        console.log("You lose! Paper beats Rock!");
+    }
+        else {
+            console.log("You win! Rock beats Scissors");
+    }
+     }
+
+    else if (playerChoices === "paper") {
+        if (getComputerChoice() === "rock") {
+            console.log("You win! Paper beats Rock!");
+        }
+        else {
+            console.log("You lose! Scissors beats Paper");
+    }
 }
+ 
+    else if (playerChoices === "scissors") {
+        if (getComputerChoice() === "paper") {
+            console.log("You win! Scissors beat Paper!");
+    }
+    else {  
+        console.log("You Lose! Rock beats Scissors!");
+        }
+    };
 
-//else if (player === rock):
-    // if (computer === paper)return "You lose! Paper beats Rock!"
-    // else return "You win! Rock beats Scissors"
-
-// else if (player === paper)
-    // if (computer === rock) return "You win! Paper beats Rock!"
-    // else return "You lose! Scissors beats Paper"
-
-// else if (player === scissors) 
-    // if (computer === paper) return "You win! Scissors beat Paper!"
-    // else return "You Lose! Rock beats Scissors!"
     </script>
 
 </body>
