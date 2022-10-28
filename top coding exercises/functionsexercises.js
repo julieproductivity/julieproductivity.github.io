@@ -58,13 +58,20 @@ function multiply (a,b) {
 
 //Write a function called capitalize that takes a string and returns that string with only 
 //the first letter capitalized. Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
+let getString=prompt("Enter a string:","").toLowerCase;
+/**has to get the 0 item of the string and 0 letter of the string.0 and return the whole
+ * into a string with the first letter capitalized**/
 function capitalize (""){
+
+
   //pseudocode: need to find the first letter of the string, then transform this first letter to UPPERCASE
   //then return the entire string 
 }
 
 //Write a function called lastLetter that takes a string and returns the very last letter of that string:
 //lastLetter("abcd") should return "d"
+
+let getString = prompt("Enter a word:","").toLowerCase();
 
 function lastLetter ("") {
 //pesudocode: we need to find te last letter of the last word of the string and return it 

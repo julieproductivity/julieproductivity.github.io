@@ -7,86 +7,42 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <script>
-// input from player : rock, paper, scissors 
-// computer randowly choose between rock, paper, scissors:
-    // const computerChoices = ['rock','paper','scissors']       
-    // function getComputerChoices {
-        // const getComputerChoices=computerChoices[Math.floor(math.random()*computerChoices.length)];
- 
-// if player === computer choice: "It's a tie!"
 
-//else if (player === rock):
-    // if (computer === paper)"You lose! Paper beats Rock!"
-    // else "You win! Rock beats Scissors"
-
-// else if (player === paper)
-    // if (computer === rock) "You win! Paper beats Rock!"
-    // else "You lose! Scissors beats Paper"
-
-// else if (player === scissors) 
-    // if (computer === paper) "You win! Scissors beat Paper!"
-    // else "You Lose! Rock beats Scissors!"
-
-                // --- user choice
-
-    let playerChoices = prompt("Choose between Rock, paper, scissors : ", "").toLowerCase();
-    //add a function : if playerChoice != rock, paper or scissors; "you should choose between
-    // rock, paper, scissor!"
+    <h1>     Let's play Rock, paper, Scissors </h1>
     
-   if (playerChoices=="rock" || playerChoices=="paper"||playerChoices=="scissors") {
-      console.log("You chose " + playerChoices);
-    }
-  else {
-    console.log("Error! Enter either: rock, paper or scissors!");
-}
-    //const computerChoices  = ['rock','paper','scissors'];
-       
-                //---computer choice 
-
-
-    const computerChoices=["rock","paper","scissors"];
-
-    function getComputerChoice(){
-    const getComputerChoice=computerChoices[Math.floor(Math.random()*computerChoices.length)];
-    //computer needs to ramdomly choose between rock,paper,scissors
-    return (getComputerChoice);  
-    
-}
-        console.log(getComputerChoice);
-
-    //---- GAME LOGIC
-
-    if (playerChoices === getComputerChoice()){
-        console.log("It's a tie!");
-    }
-
-    else if (playerChoices === "rock"){ 
-        if (getComputerChoice() === "paper") {
-        console.log("You lose! Paper beats Rock!");
-    }
-        else {
-            console.log("You win! Rock beats Scissors");
-    }
-     }
-
-    else if (playerChoices === "paper") {
-        if (getComputerChoice() === "rock") {
-            console.log("You win! Paper beats Rock!");
-        }
-        else {
-            console.log("You lose! Scissors beats Paper");
-    }
-}
+    <script src="RPCFINAL.js" >
+/** -- Pseudocode --
+ *
+ *  1. input from player : rock, paper, scissors 
+    -> input has to be case insensitive !
+    2. computer randowly choose between "rock", "paper", "scissors":
+     -> const computerChoices = ['rock','paper','scissors']       
+     
+     3. function computerSelections {
+        const computerSelections=computerChoices[Math.floor(math.random()*computerChoices.length)];
  
-    else if (playerChoices === "scissors") {
-        if (getComputerChoice() === "paper") {
-            console.log("You win! Scissors beat Paper!");
-    }
-    else {  
-        console.log("You Lose! Rock beats Scissors!");
-        }
-    };
+    if input from player === computer choice: return "It's a tie!"
+
+    else if (player === rock):
+        if (computer === paper)"You lose! Paper beats Rock!"
+        else "You win! Rock beats Scissors"
+
+     else if (player === paper)
+        if (computer === rock) "You win! Paper beats Rock!"
+        else "You lose! Scissors beats Paper"
+
+     else if (player === scissors) 
+        if (computer === paper) "You win! Scissors beat Paper!"
+        else "You Lose! Rock beats Scissors!"
+
+        **/ 
+
+        //--- user choice --
+
+        
+
+
+
 
     </script>
 
