@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Methods</title>
+</head>
+<body>
+    <h1>
+        THE TITLE OF YOUR WEBPAGE
+      </h1>
+      <div id="container"></div>
+      <button onclick="alert('Hello World')">Click Me</button>
+
+      <button id="btn">Click Me</button>
+
+      <button id="bton">Click Me Too</button>
+
+</body>
+<script>
+    const container = document.querySelector('#container');
+
+    const content = document.createElement('div');
+    content.classList.add('content');
+    content.textContent = 'This is the glorious text-content!';
+    
+    container.appendChild(content);
+
+    const paragraph = document.createElement('p');
+    paragraph.classList.add('redtext');
+    paragraph.textContent = 'Hey I\'m red !';
+    paragraph.setAttribute('style', 'color:red;');
+   
+   container.appendChild(paragraph);
+    
+    const heading = document.createElement('h3');
+    heading.classList.add('bluetext');
+    heading.textContent = 'I\'m a blue h3!';
+    heading.setAttribute('style', 'color:blue;');
+
+    container.appendChild(heading);
+    
+    const div = document.createElement('div');
+    div.setAttribute('style', 'border: 3px solid black; background-color:pink;')
+    const headingone = document.createElement('h1');
+    headingone.textContent = 'I\'m in a div';
+    
+    const ptwo = document.createElement('p');
+    ptwo.textContent = 'ME TOO!';
+
+
+    div.appendChild(headingone);
+    div.appendChild(ptwo);
+    container.appendChild(div);
+
+    const btn = document.querySelector('#btn');
+    btn.onclick = () => alert("Hello World");
+
+    const bton = document.querySelector('#bton');
+    bton.addEventListener('click', () => {
+    alert("Hello World");  // more flexible and powerful to use 
+    });
+
+    btn.addEventListener('click', function (e) {
+  console.log(e.target);
+});
+
+    </script>
+</html>
