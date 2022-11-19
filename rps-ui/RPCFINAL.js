@@ -1,75 +1,83 @@
-const choices = ["rock", "paper", "scissors"]
 
-function game() {
-    //play the game
-    for (let i =0; i<5; i++) {
-        playRound(i);
+//grab the id to put the choices made 
+const playerChoiceDisplay = document.querySelector('#playerChoice')
+const computerChoiceDisplay = document.querySelector('#computerChoice')
+const resultDisplay = document.querySelector('#resultDisplay')
+const btnChoice = document.querySelectorAll('button');
+const winnerDisplay = document.querySelector('#winner')
+const playerScoreDisplay = document.querySelector('#playerScore')
+const computerScoreDisplay = document.querySelector ('#computerScore')
+let playerChoice
+let computerChoice
+let result 
+let winner
+let tie = 0
+let playerWin = 0
+let computerWin = 0
+let roundWinner
+
+btnChoice.forEach(btn =>btn.addEventListener('click',(e) => {
+    playerChoice = e.target.id
+    playerChoiceDisplay.innerHTML = playerChoice
+    randomComputerChoice();
+    getResult()
+    roundsresult()
+   
+}))
+
+function randomComputerChoice() {
+    const randomNumber = Math.floor(Math.random() * btnChoice.length) +1;
+
+    if (randomNumber === 1) {
+        computerChoice = 'rock'
     }
-     //runs function playRound
-} 
-
-function playRound(i){
-    //playRounds
-    const playerSelection = playerChoice(); /** we put the return value of function playerChoice into a 
-    const playerSelection in order to have player's input value to compare in function checkWinner */ 
-    const computerSelection = computerChoice(); /** we put the return value of function computerChoice 
-    into a const playerSelection in order to have computer's input value to compare in function checkWinner */ 
-    computerLog(computerSelection); // logs the computerSelection value 
-    checkWinner (playerSelection, computerSelection); /** runs the function checkWinner to run
-    the game */
-    
-
-}
-
-function playerChoice() {    //get input from playerChoice
-    let getPlayer = prompt("Choose between Rock, paper, scissors : ");
-    
-    if  (getPlayer == null) {
-        playerChoice();
-
-    } else { /**"rock" || getInputP == "paper" || getInputP == "scissors")*/
-        let getInput = getPlayer.toLowerCase();
-        if (getInput == "rock" || getInput == "paper" || getInput == "scissors"){
-            console.log("Player choses ", getInput);
-            return getInput;
-        }
-        else {
-            console.log("Type ERROR ! Try again")
-            playerChoice();
-        }
-        
-        // need to replay function playerChoice and stop the following events 
-        // event for cancel also 
-    }
-    
-    }
-
-
-
-function computerChoice() {
-    //get random choice from computer
-return choices[Math.floor(Math.random()*choices.length)] /** can change choices.length to 3 same,  */ 
-}
-
-
-function checkWinner(playerSelection, computerSelection) { /** comparing the values we generated
-from functions playerChoice and computerChoice respectively stored 
-in const playerSelection and computerSelection */
-    if(playerSelection === computerSelection) {
-        console.log("Tie!");
-    } else if ((playerSelection ==="rock" && computerSelection==="scissors") 
-    ||  (playerSelection ==="scissors" && computerSelection==="paper") 
-    ||  (playerSelection ==="paper" && computerSelection==="rock")) {
-        console.log("Player wins!");
+    else if (randomNumber === 2) {
+        computerChoice ='paper'
     }
     else {
-        console.log("Computer wins!");
+        computerChoice = 'scissors'
     }
-}
-function computerLog(computerChoice) { // function used to log the value of function computerChoice()
-    console.log("Computer choses:", computerChoice);
+    computerChoiceDisplay.innerHTML = computerChoice;
+    
+} 
+
+function getResult () {
+    
+    if (playerChoice === computerChoice) {
+        result = "It's a TIE !"
+
+    }
+    else if ((playerChoice == 'rock' && computerChoice == 'paper') ||
+            (playerChoice == 'paper'&& computerChoice =='rock') ||
+            (playerChoice == 'scissors' && computerChoice == 'rock')) { 
+        result = "You WIN!"
+        playerWin += 1;
+        playerScoreDisplay.innerHTML = playerWin
+    }
+    else {
+        result = "Computer wins ..."
+        computerWin += 1;
+        computerScoreDisplay.innerHTML = computerWin
+    }
+    resultDisplay.innerHTML = result
 }
 
-    game(); // run the function !
+function roundsresult() {
+    if ((computerWin === 5) && (computerWin > playerWin)){
+        roundWinner = "You failed this game, Computer WIN ! PLAY AGAIN !"
+     
+    }
 
-/** WHAT I've learned: - you have to call the function to run it ...**/  
+    else if ((playerWin === 5) && (playerWin > computerWin)){
+        roundWinner ="Good job, you WIN ! PLAY AGAIN !"
+
+    }
+
+    else {
+        roundWinner = ''
+    }
+
+    winnerDisplay.innerHTML =roundWinner
+}
+
+
