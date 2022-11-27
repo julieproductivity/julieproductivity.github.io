@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//TASK 1
+const cat = {
+  name : 'Bertie',
+  breed : 'Cymric',
+  color : 'white',
+  greeting: function() {
+    console.log('Meow!');
+  }
+}
+
+// Put your code here
+
+const catName = cat["name"];
+cat.greeting();
+cat.color="black";
+
+// Don't edit the code below here
+
+let para1 = document.createElement('p');
+let para2 = document.createElement('p');
+
+para1.textContent = `The cat's name is ${ catName }.`;
+para2.textContent = `The cat's color is ${ cat.color }.`;
+
+section.appendChild(para1);
+section.appendChild(para2);
+
+// --- TASK 2 ----
+
+
+let bandInfo;
+
+// Put your code here
+
+const band = {
+    name : "BlackPink",
+    nationality : "Korean",
+    genre: "K-POP",
+    members: "4",
+    formed : "2016",
+    split:false,
+    albums: {
+        name:["The Album", "Born Pink"],
+        released:["2020", "2022"]
+
+    }
+}
+
+bandInfo = `The band name is ${band.name} and it's a ${band.nationality} band. They do ${band.genre} music and 
+they are ${band.members} members. They debuted in ${band.formed} and release their first album "${band.albums.name[0]}" in
+${band.albums.released[0]} and their second album "${band.albums.name[1]}"" in ${band.albums.released[1]}.`;
+
+// Don't edit the code below here
+
+let para1 = document.createElement('p');
+para1.textContent = bandInfo;
+section.appendChild(para1);
+    
+// --- TASK 3 ---
+
+const cat = {
+  name : 'Bertie',
+  breed : 'Cymric',
+  color : 'white',
+  greeting: function() {
+    console.log(`Hello, said ${this.name} the ${this.breed} !`);
+  }
+}
+cat.greeting();
+    
+    
+// --- TASK 4 ---
+
+function Greeting(name, breed) {
+this.name = name;
+this.breed = breed;
+this.greeting = function() {
+     console.log(`Hello, said ${ this.name } the ${ this.breed }.`);
+   }
+}
+const cat = new Greeting("Bertie");
+cat.name;
+cat.breed = 'Cymric';
+cat.greeting();
+
+const cat2 = new Greeting("Elfie");
+cat2.name;
+cat2.breed = 'Aphrodite Giant';
+cat2.greeting();
+    
+
+
+
+    
+    </script>
+
+
+
+</body>
+</html>
