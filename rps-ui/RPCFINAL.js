@@ -43,6 +43,7 @@ function randomComputerChoice() {
 
 function getResult () {
     
+    
     if (playerChoice === computerChoice) {
         result = "It's a TIE !"
 
@@ -65,12 +66,12 @@ function getResult () {
 function roundsresult() {
     if ((computerWin === 5) && (computerWin > playerWin)){
         roundWinner = "You failed this game, Computer WIN ! PLAY AGAIN !"
-     
+        reset();
     }
 
     else if ((playerWin === 5) && (playerWin > computerWin)){
         roundWinner ="Good job, you WIN ! PLAY AGAIN !"
-
+        reset();
     }
 
     else {
@@ -80,4 +81,10 @@ function roundsresult() {
     winnerDisplay.innerHTML =roundWinner
 }
 
+function reset(){
+    
+    computerWin = 0;
+    playerWin = 0;
+    
+  }
 
