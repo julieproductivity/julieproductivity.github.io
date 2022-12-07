@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Josefin+Sans:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color:#DD8563;
+    color:#E8DAB2;
+    border: 5px solid #E8DAB2;
+    margin: 50px;
+
+}
+h1 {
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+    color:#F3DE8A;
+    font-size: 80px;
+    padding: 20px 0;
+}
+
+.playerchoices, .results{
+    text-align: center;
+}
+
+.playerchoices h2 {
+   text-align: center;
+}
+/* PLAYER BUTTONS */
+button{
+    background-color: transparent;
+    background-size: cover;
+    width: 260px;
+    height: 260px;
+    border: none;
+    margin: 0 50px;
+    border-radius: 40px;
+    font-family: 'Berkshire Swash', cursive;
+    color: #E8DAB2;
+    font-size: 30px;
+}
+#rock {
+    background-image:url(rock.png);
+    
+}
+
+
+#paper{
+    background-image: url(paper.png);
+}
+
+#scissors {
+    background-image:url(scissors.png);
+}
+
+#rock:hover, #paper:hover, #scissors:hover{
+    opacity: 0.5;
+    color: #E8DAB2;
+
+}
+#rock:active, #paper:active, #scissors:active{
+    color:#E8DAB2
+}
+/* RESULTS & CHOICES DISPLAYS*/
+.displayR, .roundwinner {
+    padding: 50px 0;
+}
+.choices, .roundresults {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.material-symbols-outlined{
+    display: inline;
+}
+.roundwinner{
+  
+  font-size: 30px;
+  text-align: center;  
+}
+
+/*FOOTER*/
+footer {
+    text-align: center;
+    font-size: 15px;
+}
