@@ -1,3 +1,144 @@
-h1 {
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* MAIN GRID*/
+
+main{
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    background-color: rgb(247, 250, 255);
+    
+}
+
+/* LOGO , LEFT PART */ 
+
+
+
+
+.bgimg {
+    background-image: url(clouds.jpg);
+    height: 100vh;
+    background-size: cover;
+    
+}
+
+.logoimg{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: rgba(66, 64, 64, 0.564);
+    padding: 0 200px;
+    margin-top: 200px;
+    
+}
+
+.odin {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 90px;
+    color: #fff;
+    font-family: 'Cinzel Decorative', cursive;
+}
+img {
+    max-height: 140px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 20px 0;
+}
+
+.credit {
+    display: grid;
+    align-items: end;
+    justify-content: center;
+    margin-top: 550px;
+    color: #fff;
+}
+
+/* FORM , RIGHT PART */
+
+h3 {
+    max-width: 40vw;
+}
+
+p {
+    margin-top: 30px;
+    font-weight: 200;
+}
+
+form {
+    margin-top: 5vh;
+    
+}
+
+.formall{
+    position: relative;
+background-color: #fff;
+right: 50px;
+padding: 20px 50px;
+box-shadow: 0 5px 3px rgb(194, 193, 193);
+
+}
+
+label{
+    font-family:'Poppins', sans-serif;
+    
+}
+
+.formtemplate {
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+
+}
+.mainform {
+    padding-top: 15vh;
+    padding-left: 5vh;
+}
+
+legend {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+/* FORM INPUT RESPONSIVENESS*/
+
+input {
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 3px;
+    
+}
+
+
+input:valid{
+    border: 2px solid rgb(62, 78, 152);
+}
+input:invalid{
+    border: 2px solid red;
+}
+
+/* BUTTON RESPONSIVENESS*/
+
+button {
+    padding: 10px 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: rgb(90, 143, 203);
+    border: none;
+}
+button:hover{
+    background-color:rgb(133, 177, 226);
+}
+
+h4 {
+    margin-top: 50px;
+    font-weight: 100;
 }
